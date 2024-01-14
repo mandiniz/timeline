@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zelda | La Línea Temporal</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/style-form.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header class="zelda-bg">
+      <div class="container">
+        <nav class="navbar">
+          <a href="#" class="nav-branding"
+            ><img src="./images/zelda.svg" alt="Logo-Zelda" class="logo"
+          /></a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+      <div class="titulos">
+        <h1>The Legend of Zelda: Time Journey</h1>
+        <hr />
+        <p>
+          Explore the intriguing timeline that weaves the epic tale of The
+          Legend of Zelda, where each game is a narrative gem
+        </p>
+      </div>
+    </header>
+    <section class="detail">
+      <h2 id="about">Juegos Principales y Detalles</h2>
+      <img src="./images/subrayado.png" alt="subrayado-zelda" />
+      <p>
+        Welcome to our page dedicated to exploring the fascinating timeline of
+        The Legend of Zelda video game series. Here you will find details and
+        trivia about the main games that make up the rich narrative of this
+        acclaimed franchise. Immerse yourself in the world of Hyrule as we
+        unravel the connection between different titles and discover the events
+        that shape Zelda's story.
+      </p>
+    </section>
+    <main>
+      <div class="containerbtn">
+        <button id="reversebtn" onclick="invertirOrden(datos)">⮃</button>
+      </div>
+      <div class="line"></div>
+      <ul id="timeline" class="timeline"></ul>
+    </main>
+    <footer id="contact">
+      <h3>Contact us</h3>
+      <form id="contactform" action="#">
+        <ul>
+          <li class="half-form">
+            <label for="name"></label>
+            <input type="text" name="name" id="name" placeholder="Name" />
+          </li>
+          <li class="half-form">
+            <label for="lastname"></label>
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Last name"
+            />
+          </li>
+          <li class="half-form">
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="Email" />
+          </li>
+          <li class="half-form">
+            <label for="tel"></label>
+            <input
+              type="tel"
+              name="telephone"
+              id="tel"
+              placeholder="Telephone"
+            />
+          </li>
+          <li>
+            <label for="message"></label>
+            <textarea
+              type="text"
+              id="message"
+              name="message"
+              placeholder="Send us your message for more games ideas"
+            ></textarea>
+          </li>
+        </ul>
+        <button id="submitbtn" type="submit" onclick="submitform(event)">
+          Submit
+        </button>
+      </form>
+    </footer>
+    <script src="main.js"></script>
+    <script src="menu.js"></script>
+    <script src="timeline.js"></script>
+    <script src="main-form.js" defer></script>
+  </body>
+</html>
